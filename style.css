@@ -1,0 +1,64 @@
+/* Renkler değişkende: karanlık modda sadece bunları değiştirmek yeter */
+:root {
+  --arka: #f5f5f5;
+  --kart: white;
+  --yazi: #222;
+  --soluk: #777;
+}
+
+body.karanlik {
+  --arka: #1e1e1e;
+  --kart: #2d2d2d;
+  --yazi: #eee;
+  --soluk: #aaa;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+  background: var(--arka);
+  color: var(--yazi);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#not-metni {
+  flex: 1;
+  min-width: 200px;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: var(--kart);
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zaman {
+  color: var(--soluk);
+  font-size: 14px;
+}
+
+/* Uyarı zamanı geçmiş notlar */
+.gecti {
+  border-left: 4px solid crimson;
+}

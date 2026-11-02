@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notlarım</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Notlarım <button id="tema-dugmesi">🌙</button></h1>
+
+  <!-- Form: kullanıcıdan veri almanın temel yolu -->
+  <form id="not-formu">
+    <input id="not-metni" type="text" placeholder="Notunu yaz..." required>
+    <!-- Boş bırakılırsa uyarı kurulmaz -->
+    <input id="not-zamani" type="datetime-local">
+    <button type="submit">Ekle</button>
+  </form>
+
+  <!-- Notlar JavaScript ile buraya eklenecek -->
+  <ul id="not-listesi"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
